@@ -1,0 +1,29 @@
+@import '~src/variables';
+
+h1 {
+    font-size: $font-size-h1;
+    letter-spacing: $letter-spacing-h1;
+}
+.card .card-header {
+    background-color: $color-secondary;
+    color: $color-primary;
+}
+.form-group button.login {
+    background-color: $color-accent;
+    color: $color-primary;
+}
+.form-group button.register {
+    background-color: $color-primary;
+    color: $color-accent;
+    border-color: $color-accent;
+    margin-left: 8px;
+}
+button {
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+}
+label {
+    font-size: $font-size-body;
+    letter-spacing: $letter-spacing-body;
+    color: $color-grey-dark-txt;
+}

@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <button (click)="goBack()" class="btn">
+        <mat-icon>arrow_back</mat-icon>Atrás
+    </button>
+    <div *ngIf="course" class="cardsSection row">
+        <app-temary class="col-sm-3" [course]="course"></app-temary>
+        <app-sessions-list class="col-sm-8" [course]="course"></app-sessions-list>
+        <div class="col-offset-1"></div>
+    </div>
+</div>

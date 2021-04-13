@@ -1,0 +1,19 @@
+<mat-card class="col-md-10">
+    <mat-card-title>
+        Vuelve donde lo dejaste
+    </mat-card-title>
+    <mat-card-subtitle>
+        {{activeCourse.name}} - {{activeSession.name}}
+    </mat-card-subtitle>
+    <mat-card-actions>
+        <button routerLink="/play/{{activeCourseId}}/{{activeSessionId}}" class="btn">
+            <mat-icon>play_arrow</mat-icon> Reproducción ordenada
+        </button>
+        <button class="btn">
+            <mat-icon>shuffle</mat-icon> Aleatorio
+        </button>
+        <button class="btn">
+            <mat-icon>reply</mat-icon> Siguiente sesión
+        </button>
+    </mat-card-actions>
+</mat-card>

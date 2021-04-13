@@ -1,0 +1,140 @@
+@import '~src/variables';
+
+h1 {
+    font-size: $font-size-h1;
+    letter-spacing: $letter-spacing-h1;
+}
+h2 {
+    font-size: $font-size-h2;
+    letter-spacing: $letter-spacing-h2;
+}
+button {
+    color: $color-primary;
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+}
+mat-label {
+    color: $color-grey-medium;
+    letter-spacing: $letter-spacing-body;
+}
+mat-toolbar {
+    background-color: $color-secondary;
+    color: $color-primary;
+}
+mat-toolbar-row{
+    place-content: space-between;
+}
+.mat-icon {
+    border-radius: 30px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    height: 36px;
+    width: 36px;
+}
+.buttons {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+    button {
+        margin-right: 8px;
+    }
+    button:focus {
+        outline: 0px;
+    }
+}
+.mat-icon-button .mat-icon {
+    box-shadow: 0px 4px 8px rgba($color-grey-dark-icons, 0.3);
+    line-height: 36px;
+}
+.mat-icon-button .mat-icon:hover {
+    transform: translateY(5px);
+}
+mat-sidenav-container mat-sidenav {
+    right: 1px;
+    width: 40%;
+}
+.mat-drawer {
+    transform: translate3d(100%, 0, 0);
+}
+mat-sidenav-container .mat-drawer-backdrop.mat-drawer-shown {
+    background-color: $color-grey-dark-txt;
+    opacity: 50%;
+    filter: blur(8px);
+}
+.mat-drawer-backdrop.mat-drawer-shown{
+    background-color: transparent !important;
+}
+.container {
+    background-color: $color-primary;
+}
+span {
+    background-color: $color-primary;
+}
+fa-icon {
+    background-color: $color-primary;
+}
+.sidebarTitle{
+    font-weight: bold;
+    padding: 0 40px 0 0;
+    background-color: $color-primary;
+    text-align: center;
+}
+mat-nav-list .container {
+    padding: 30px 70px 0 70px;
+    background-color: $color-primary;
+    height: 100%;
+}
+legend {
+    background-color: $color-primary;
+    font-size: medium;
+    padding: 0 5px 0 5px;
+    word-wrap: normal;
+    color: $color-grey-dark-txt;
+    width: fit-content;
+}
+fieldset {
+    border: 0.5px; 
+    border-style: solid; 
+    margin-top: 20px;
+    padding: 20px;
+    border-color: $color-grey-dark-txt;
+    background-color: inherit;
+}
+.container .row {
+    align-items: center;
+    flex-wrap: inherit;
+}
+.btn{
+    background-color: $color-accent;
+    border-color: $color-accent;
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+    margin: 5px 0 5px 0;
+}
+.save-button {
+    justify-content: center;
+}
+.closingLabel {
+    text-align: center;
+    background-color: inherit;
+    font-size: $font-size-links;
+    letter-spacing: $letter-spacing-links;
+    color: $color-grey-dark-txt;
+}
+.closingLabel>u {
+    background-color: $color-primary;
+    font-size: $font-size-links;
+    letter-spacing: $letter-spacing-links;
+}
+mat-form-field {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 414px) {
+    mat-sidenav-container mat-sidenav {
+        right: 1px;
+        width: 100%;
+    }
+}

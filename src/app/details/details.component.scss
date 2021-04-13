@@ -1,0 +1,13 @@
+@import '~src/variables';
+
+button mat-icon {
+    vertical-align: sub;
+    margin-right: 5px;
+    color: $color-grey-dark-icons;
+}
+button {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+}

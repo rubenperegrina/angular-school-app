@@ -1,0 +1,10 @@
+﻿<div class="home">
+    <div *ngIf="activeCourse">
+        <app-watch-again [activeCourse]="activeCourse" [activeSession]="activeSession" [activeCourseId]="activeCourseId" [activeSessionId]="activeSessionId"></app-watch-again>
+    </div>
+    <h2>Temario</h2>
+    <div *ngIf="course">
+        <app-temary *ngFor="let course of course" [course]="course">
+        </app-temary>
+    </div>
+</div>

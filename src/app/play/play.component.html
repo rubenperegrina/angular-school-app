@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row title">
+        <h1>Antes de empezar...</h1>
+    </div>
+    <div class="row content">
+        <div class="col">
+            <div class="row">
+                <mat-icon class="icon row">volume_up</mat-icon>
+            </div>
+            <div class="text">Asegúrate de tener el <b>volumen activado</b></div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <mat-icon class="icon row">timer</mat-icon>
+            </div>            
+            <div class="text">Los bits pasan automáticamente <b>cada 2 segundos</b></div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <mat-icon class="icon row">pause</mat-icon>
+            </div>
+            <div class="text">Puedes detener el pase con la <b>barra espaciadora</b> o haciendo <b>clic en la pantalla</b></div>
+        </div>
+    </div>
+    <div class="row play">
+        <button (click)="markAsViewed()" class="btn">
+            <mat-icon>play_arrow</mat-icon> Empezar pase
+        </button>
+    </div>
+</div>

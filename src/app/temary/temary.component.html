@@ -1,0 +1,11 @@
+<mat-card class="row temary-card" routerLink="/details/{{course.id}}">
+    <div class="card-text col-sm-9">
+        <mat-card-title>{{course.name}}</mat-card-title>
+        <mat-card-subtitle>{{course.completedSessions}}/{{course.totalSessions}} sesiones</mat-card-subtitle>    
+    </div>
+    <div class="card-icons col-sm-3">
+        <mat-icon *ngIf="course.completedSessions == 10">check_circle</mat-icon>
+        <mat-icon *ngIf="course.completedSessions >= 1 && course.completedSessions != 10">timelapse</mat-icon>
+        <mat-icon *ngIf="course.completedSessions == 0">radio_button_unchecked</mat-icon>
+    </div>
+</mat-card>

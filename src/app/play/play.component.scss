@@ -1,0 +1,43 @@
+@import '~src/variables';
+
+h1 {
+    font-size: $font-size-h1;
+    letter-spacing: $letter-spacing-h1;
+    margin: 50px 0 120px 0;
+}
+.container-fluid .title {
+    justify-content: center;
+}
+.content .col .row {
+    justify-content: center;
+}
+.text {
+    text-align: center;
+    margin-top: 50px;
+    font-size: $font-size-body;
+    letter-spacing: $letter-spacing-body;
+}
+.icon {
+    border-radius: 15px;
+    background-color: $color-background;
+    font-size: 50px;
+    padding: 25px 0 25px 25px;
+    width: 100px;
+    height: 100px;
+    color: $color-secondary;
+}
+.play {
+    justify-content: center;
+    margin-top: 80px;
+}
+.play .btn {
+    color: $color-primary;
+    background-color: $color-accent;
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+    margin-right: 15px;
+}
+.play .btn mat-icon {
+    vertical-align: sub;
+    color: $color-primary;
+}

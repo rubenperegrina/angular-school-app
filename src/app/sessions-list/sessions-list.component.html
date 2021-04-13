@@ -1,0 +1,24 @@
+<mat-card class="col-md-12">
+    <div class="row card-header">
+        <mat-card-title class="col-sm-11">Sesiones del {{course.name}}</mat-card-title>
+        <div class="sessionsCompleted col-sm-1">{{course.completedSessions}}/{{course.totalSessions}}</div>
+    </div>
+
+    <div class="container">
+        <ul>
+            <li *ngFor="let session of course.sessions" class="row">
+                <span class="sessionId col-sm-1">{{session.id}}</span>
+                <span class="sessionName col-sm-9">{{session.name}}</span>
+                <span class="col-sm-1 shuffleButtons">
+                    <button class="btn"><mat-icon>shuffle</mat-icon></button>
+                </span>
+                <span class="col-sm-1 playButtons">
+                    <button routerLink="/play/{{courseId}}/{{session.id}}" class="btn"><mat-icon>play_arrow</mat-icon></button>                </span>
+                <span class="col-sm-2 statusIcon">
+                    <button *ngIf="session.watched" class="btn watched"><mat-icon>visibility</mat-icon></button>
+                    <button *ngIf="!session.watched" class="btn un-watched"><mat-icon>visibility_off</mat-icon></button>
+                </span>
+            </li>
+        </ul>
+    </div>
+</mat-card>

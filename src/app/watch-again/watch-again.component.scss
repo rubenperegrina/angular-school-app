@@ -1,0 +1,63 @@
+@import '~src/variables';
+
+mat-card-title {
+    font-size: $font-size-h2;
+    letter-spacing: $letter-spacing-h2;
+    margin-left: 15px;
+}
+mat-card-subtitle {
+    font-size: $font-size-body;
+    letter-spacing: $letter-spacing-body;
+    color: $color-grey-dark-txt;
+    margin-left: 15px;
+}
+mat-card-actions {
+    margin-left: 15px;
+}
+button {
+    color: $color-primary;
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+    margin-bottom: 15px;
+}
+mat-label {
+    color: $color-grey-medium;
+    letter-spacing: $letter-spacing-body;
+}
+mat-toolbar {
+    background-color: $color-secondary;
+    color: $color-primary;
+}
+mat-card{
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px $color-grey-dark-txt;
+}
+.btn {
+    color: $color-accent;
+    border-color: $color-accent;
+    border-width: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+    margin-right: 15px;
+}
+.btn:hover{
+    color: $color-primary;
+    background-color: $color-accent;
+    border-color: $color-primary;
+}
+.btn:hover > mat-icon {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+}
+.btn mat-icon {
+    vertical-align: sub;
+}

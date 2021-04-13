@@ -1,0 +1,65 @@
+@import '~src/variables';
+
+mat-card-title {
+    font-size: $font-size-h2;
+    letter-spacing: $letter-spacing-h2;
+    font-weight: bold;
+}
+mat-card-subtitle {
+    font-size: $font-size-body;
+    letter-spacing: $letter-spacing-body;
+    font-weight: lighter;
+}
+button {
+    color: $color-primary;
+    font-size: $font-size-button;
+    letter-spacing: $letter-spacing-button;
+}
+mat-label {
+    color: $color-grey-medium;
+    letter-spacing: $letter-spacing-body;
+}
+mat-toolbar {
+    background-color: $color-secondary;
+    color: $color-primary;
+}
+.card-text {
+    padding: 0px 10px 0px 0px;
+}
+mat-toolbar-row{
+    place-content: space-between;
+}
+.temary-card {
+    display: inline-flex;
+}
+.temary-card .card-text {
+    align-self: center;
+}
+.temary-card .card-text mat-card-title {
+    margin: 0px;
+}
+.temary-card .card-text mat-card-subtitle {
+    margin: 0px;
+}
+.temary-card .card-icons {
+    align-self: center;
+    padding: 0 12px 0 12px;
+}
+.temary-card .card-icons mat-icon {
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+}
+mat-card{
+    background-color: $color-primary;
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px #BDBDBD!important;
+}
+mat-icon {
+    color: $color-accent;
+    float: right;
+    background-color: $color-primary;
+}
